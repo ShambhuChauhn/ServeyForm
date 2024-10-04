@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_Form</title>
+
+</head>
+<body>
+    
+    <div>
+        <h1> <center> <u> <i>Survey Form </i></u></center></h1>
+<form >
+<div>
+<label for="name">Enter Name :-</label>
+<input type="text" id="name" required placeholder="First Name"> 
+<input type="text" name="middle_name" placeholder="middle_name">
+<input type="text" name="last_name" placeholder="Last Name">
+<br><br>
+</div><div>
+
+    <label for="Gender">Gender :- </label>
+    <input type="radio" id="Gender" name="gender"  value="Male">Male
+    <input type="radio" id="Gender" name="gender" value="Female">Female
+    <input type="radio" id="Gender" name="gender" value="Transgender"> Transgender
+    <br><br>
+
+</div>
+<div>
+    <label for="age">Age :-</label>
+<input type="number"  maxlength="2"  id="age" name="email" required>
+<br><br>
+<label for="religion_input" >
+    Religion :- 
+</label>
+<input list="religion_option"  id="religion_input" required name="religion">
+<datalist id="religion_option" > 
+    <option value="HINDUSTANI"></option>
+<option value="Hindu"></option>
+<option value="Muslim"></option>
+<option value="Christian"></option>
+
+</datalist>
+<div>
+    <br>
+    <label for="mobile_no">Contact number  :-</label>
+<input type="number" value="contact number" name="contact number" maxlength="10" required>
+<br><br>
+</div>
+<div>
+    <label for="email">Email :-</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+</div>
+<div><label for="position"> You Are:-</label>
+<input list="position" id="posirion" name="position" required>
+<br><br>
+
+<datalist id="position" >
+<option value="Student"></option>
+<option value="House Wife"></option>
+<option value="Government Job">
+    <option value="Private Job"></option>
+    <option value="self Employee"></option>
+    <option value="bussiness"></option>
+    <option value="Labour"></option>
+ <option value="other"></option>    
+</option>
+
+</datalist>
+<label for="Residency">
+    Resideny :- </label><input type="radio" id="Residency" name="residency" value="permanent">permanent 
+<input type="radio" id="Residency" name="residency" value="Temporary"> Temporary
+
+</div>
+
+<div>
+<label for="member">
+    Total Member :-
+</label>
+<input type="number" name="member"  id="member" min="0" >
+<br><br>
+<label for="child_member" title="Child Age should be less than 18">Total child :-</label>
+<input type="number" value="child_member" id="child_member" min="0" >
+<br><br>
+<label for="Adult_member">Total Adult</label>
+<input type="number" id="Adult_member" value="Adult_member" min="0" > 
+<br><br>
+</div>
+<div>
+<label for="2wheeler_vehical">Motor Bike</label>
+<input type="number" id="2wheeler_vehical" name="motorbike" min="0" >
+<br><br>
+<label for="4wheeler_vehical">Motor Car</label>
+<input type="number" id="4wheeler_vehical" value="motorcar" name="motercar" min="0" >
+<br><br>
+</div>
+<br><br>
+<div><center><input type="submit" value="Survey Complete"></center></div>
+</form>
+
+    </div>
+
+</body>
+</html>
